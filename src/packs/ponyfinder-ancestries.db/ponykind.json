@@ -11,43 +11,19 @@
             "value": "Ponyfinder: Second Edition Conversion Guide"
         },
         "traits": {
-            "value": [
-                "fey",
-                "hb_ponykind"
-            ],
+            "value": ["fey", "hb_ponykind"],
             "rarity": "common",
             "custom": ""
         },
         "boosts": {
             "0": {
-                "value": [
-                    "str",
-                    "dex",
-                    "con",
-                    "int",
-                    "wis",
-                    "cha"
-                ]
+                "value": ["str", "dex", "con", "int", "wis", "cha"]
             },
             "1": {
-                "value": [
-                    "str",
-                    "dex",
-                    "con",
-                    "int",
-                    "wis",
-                    "cha"
-                ]
+                "value": ["str", "dex", "con", "int", "wis", "cha"]
             },
             "2": {
-                "value": [
-                    "str",
-                    "dex",
-                    "con",
-                    "int",
-                    "wis",
-                    "cha"
-                ]
+                "value": ["str", "dex", "con", "int", "wis", "cha"]
             }
         },
         "flaws": {
@@ -61,10 +37,7 @@
         "reach": 5,
         "speed": 30,
         "languages": {
-            "value": [
-                "common",
-                "sylvan"
-            ],
+            "value": ["common", "sylvan"],
             "custom": ""
         },
         "additionalLanguages": {
