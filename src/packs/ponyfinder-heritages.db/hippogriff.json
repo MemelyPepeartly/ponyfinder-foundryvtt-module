@@ -7,24 +7,58 @@
         "description": {
             "value": "<p>You have the forebody of a bird and the hindquarters of a pony. You gain the ponykind trait. You lose your Strength and Wisdom boosts. You lose your Charisma flaw. You gain a boost to Strength or Wisdom and a free boost. You gain one first level ancestry feat. Being a ponykind, you may select ponykind ancestry feats freely.</p>"
         },
-        "source": { "value": "Ponyfinder: Second Edition Conversion Guide" },
-        "traits": { "value": [], "rarity": "common", "custom": "" },
-        "boosts": {
-            "0": { "value": ["str", "wis"] },
-            "1": { "value": [] },
-            "2": { "value": ["str", "dex", "con", "int", "wis", "cha"] }
+        "source": {
+            "value": "Ponyfinder: Second Edition Conversion Guide"
         },
-        "flaws": { "0": { "value": [] } },
+        "traits": {
+            "value": [],
+            "rarity": "common",
+            "custom": ""
+        },
+        "boosts": {
+            "0": {
+                "value": [
+                    "str",
+                    "wis"
+                ]
+            },
+            "1": {
+                "value": []
+            },
+            "2": {
+                "value": [
+                    "str",
+                    "dex",
+                    "con",
+                    "int",
+                    "wis",
+                    "cha"
+                ]
+            }
+        },
+        "flaws": {
+            "0": {
+                "value": []
+            }
+        },
         "rules": [
-            { "add": ["hb_ponykind"], "key": "ActorTraits" },
+            {
+                "add": [
+                    "hb_ponykind"
+                ],
+                "key": "ActorTraits"
+            },
             {
                 "adjustName": false,
                 "allowedDrops": {
-                    "all": ["item:feat-type:ancestry", "item:level:1"],
+                    "all": [
+                        "item:feat-type:ancestry",
+                        "item:level:1"
+                    ],
                     "label": "PF2E.SpecificRule.AncestralParagon.AllowedDrops"
                 },
                 "choices": {
-                    "query": "{\"data.featType.value\":\"ancestry\",\"data.level.value\":1,\"$or\":[{\"data.traits.value\":{\"$elemMatch\":\"{actor|data.details.ancestry.trait}\"}},{\"data.traits.value\":{\"$elemMatch\":\"{actor|data.details.heritage.trait}\"}}],\"$not\":{\"data.traits.value\":{\"$elemMatch\":\"lineage\"}}}",
+                    "query": "{\"data.featType.value\":\"ancestry\",\"data.level.value\":1,\"$or\":[{\"data.traits.value\":{\"$elemMatch\":\"hb_ponykind\"}},{\"data.traits.value\":{\"$elemMatch\":\"hb_ponykind\"}}],\"$not\":{\"data.traits.value\":{\"$elemMatch\":\"lineage\"}}}",
                     "pack": "ponyfinder-foundryvtt-module.ponyfinder-feats"
                 },
                 "key": "ChoiceSet",
