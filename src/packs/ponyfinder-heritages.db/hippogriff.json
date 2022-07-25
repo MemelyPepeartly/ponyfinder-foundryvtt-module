@@ -17,23 +17,13 @@
         },
         "boosts": {
             "0": {
-                "value": [
-                    "str",
-                    "wis"
-                ]
+                "value": ["str", "wis"]
             },
             "1": {
                 "value": []
             },
             "2": {
-                "value": [
-                    "str",
-                    "dex",
-                    "con",
-                    "int",
-                    "wis",
-                    "cha"
-                ]
+                "value": ["str", "dex", "con", "int", "wis", "cha"]
             }
         },
         "flaws": {
@@ -43,18 +33,13 @@
         },
         "rules": [
             {
-                "add": [
-                    "hb_ponykind"
-                ],
+                "add": ["hb_ponykind"],
                 "key": "ActorTraits"
             },
             {
                 "adjustName": false,
                 "allowedDrops": {
-                    "all": [
-                        "item:feat-type:ancestry",
-                        "item:level:1"
-                    ],
+                    "all": ["item:feat-type:ancestry", "item:level:1"],
                     "label": "PF2E.SpecificRule.AncestralParagon.AllowedDrops"
                 },
                 "choices": {

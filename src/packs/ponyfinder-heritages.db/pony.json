@@ -17,18 +17,13 @@
         },
         "rules": [
             {
-                "add": [
-                    "hb_ponykind"
-                ],
+                "add": ["hb_ponykind"],
                 "key": "ActorTraits"
             },
             {
                 "adjustName": false,
                 "allowedDrops": {
-                    "all": [
-                        "item:feat-type:ancestry",
-                        "item:level:1"
-                    ],
+                    "all": ["item:feat-type:ancestry", "item:level:1"],
                     "label": "PF2E.SpecificRule.AncestralParagon.AllowedDrops"
                 },
                 "choices": {
